@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus&family=Marcellus+SC&family=Open+Sans:wght@300;400;500;600;700&family=Smokum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --subtitle-font: 'Marcellus', serif;
+    --main-font: 'Open Sans', sans-serif;
+    --paragraph-color: rgb(134, 139, 155);
+    --classes-level-color: rgb(178 181 187);
+    --classes-background-color: rgb(220, 234, 253);
+    --pricing-color: rgb(252, 238, 221);
+    --general-title-color: rgb(89, 149, 197);
+    --subtitle-color: rgb(30, 45, 75);
+    --general-text-color: rgb(134, 139, 155);
+    --third-title-color: rgb(21, 31, 54);
+    --join-title-color: rgb(203, 208, 176);
+    --join-background-color: rgb(243, 245, 233);
+    --pricing-title-color: rgb(227, 195, 156);
+    --button-color: rgb(89, 149, 197);
+    --button-two-color: rgba(0, 0, 0, 0);
+    --button-border-color: rgb(47, 53, 71);
+    --classes-background-color: rgb(220, 234, 253);
+    --pricing-background-color: rgb(252, 238, 221);
+    --slider-date-color: rgb(89, 149, 197);
+    --light-color: rgb(255, 255, 255);
+    --footer-background-color: rgb(47, 53, 71);
+    --light-text-color: rgba(255, 255, 255, 0.7);
+    --dark-background-color: rgb(41, 46, 63);
+    --dark-accent-color: rgb(0, 0, 0);
+    --borderline-blue-color: rgb(220, 234, 253);
+    --borderline-yellow-color: rgb(252, 238, 221);
+    --borderline-green-color: rgb(220, 234, 223);
+    --contacts-background-color: rgb(248, 248, 248);
+    --header-links-color: rgba(47, 53, 71, 0.7);
+    --home-link-color: rgba(114,118,130,0.69);
+    --dark-paragraph-color: rgba(114,118,130);
+    --events-background-color: rgb(252, 238, 221);
+    --events-title-color: rgb(227, 195, 156);
+    font-family: var(--main-font);
+    color: var(--paragraph-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--general-title-color);
+    font-family: var(--main-font);
+    font-size: 0.6875rem;
+    letter-spacing: 2.2px;
+    line-height: 17.6px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-family: var(--subtitle-font);
+    color: var(--subtitle-color);
+    line-height: 39px;
+    letter-spacing: 0.6px;
+    font-size: 1.875rem;
+    font-weight: 400;
+}

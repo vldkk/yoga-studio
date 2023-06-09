@@ -1,0 +1,138 @@
+
+.parallax-content {
+  background: url(../img/bacground-special-offer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 76%;
+  background-attachment: fixed;
+  z-index: -1; 
+}
+
+
+.special-offer {
+  padding: 75px 20px 75px 20px;
+  width: 80%;
+  max-width: 688px;
+}
+
+.special-offer__sub-title {
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+.countdown-container {
+  font-family: var(--subtitle-font);
+  color: var(--header-links-color);
+  line-height: 39px;
+  letter-spacing: 0.3px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid var(--button-border-color);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 95%;
+  max-width: 425px;
+}
+
+.countdown-text {
+  padding: 20px 40px 5px 20px;
+  animation: blink 3s linear infinite;
+}
+
+#countdown {
+  color: var(--button-color);
+  font-weight: bold;
+  padding-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .countdown-text {
+    padding: 20px 40px 0 0;
+  }
+  #countdown {
+    padding: 0 40px 20px 0;
+  }
+  .countdown-container {
+    text-align: center ;
+  }
+}
+
+.special-offer__text {
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.special-offer__main-text {
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.special-offer__discount {
+  font-style: italic;
+}
+
+.special-offer__nav-button {
+  margin-top: 30px;
+}
+
+.special-offer__contacts-linc {
+  display: block;
+  margin-bottom: 20px;
+  width: 180px;
+  height: 52px;
+}
+
+.special-offer__schedule-linc {
+  display: block;
+  width: 132px;
+  height: 52px;
+}
+
+@media (min-width: 380px) {
+  .special-offer {
+    width: 100%;
+  }
+}
+
+.special-offer-paragraph {
+  max-width: 550px;
+}
+
+.special-offer__sub-title {
+  font-size: 2.875rem;
+}
+
+.special-offer__contacts-linc {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.special-offer__schedule-linc {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .special-offer__sub-title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .special-offer {
+    flex-basis: 50%;
+    max-width: 1200px;
+  }
+}

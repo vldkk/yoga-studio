@@ -1,0 +1,92 @@
+.footer {
+    background-color: var(--footer-background-color);
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.footer__logo-lotus {
+    width: 69px;
+}
+
+.footer__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11rem;
+}
+
+.footer__title {
+    color: var(--light-color);
+    font-size: 1.75rem;
+}
+
+.footer__nav-pages a {
+    text-decoration: none;
+    color: var(--general-title-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer__nav-page {
+    padding-bottom: 1.7rem;
+}
+
+.footer__nav-pages {
+    padding-top: 1.7rem;
+}
+
+.footer__nav-pages ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__main-text {
+    font-size: 0.938rem;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: center;
+    color: var(--light-text-color);
+    padding-bottom: 7.8rem;
+    width: 41%;
+    margin: auto;
+}
+
+.footer__social-image {
+    width: 1.58rem;
+    margin-right: 0.7rem;
+}
+
+.footer__nav-resources {
+    background-color: var(--dark-background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 0.94rem;
+    color: var(--light-text-color);
+    padding: 0.94rem 2rem 0.94rem 2rem;
+}
+
+.footer__nav-resources ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media (min-width:991px) {
+    .footer__nav-pages ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__nav-page {
+        padding-right: 2rem;
+    }
+}

@@ -1,0 +1,229 @@
+.classes {
+    text-align: center;
+
+}
+
+.classes__title {
+    margin: 70px 70px 20px 70px;
+}
+
+.classes__text-select {
+    margin: 20px 25px 25px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-paragraph-color);
+}
+
+.slider__img {
+    object-fit: cover;
+}
+
+.img-basics {
+    object-position: 78.365% 35.795%;
+}
+
+.img-ashtanga {
+    object-position: 23.861% 50%;
+}
+
+.img-yin {
+    object-position: 100% 31.456%;
+}
+
+.img-hatha {
+    object-position: 31.425% 62.267%;
+}
+
+.img-prenatal {
+    object-position: 52.759% 84.504%;
+}
+
+.img-vinyasa {
+    object-position: 55.292% 34.315%;
+}
+
+.slider__container {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slider {
+    padding-bottom: 30px;
+}
+
+.slider__track {
+    display: flex;
+    z-index: 0;
+}
+
+.slider__track.active {
+    transition: transform 0.8s ease-in-out;
+}
+
+.slider__units {
+    height: 30%;
+    transition: none;
+    flex-shrink: 0;
+    padding: 0 15px 0 15px;
+}
+
+.slider__units-subtitle {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.classes .slider__units-text {
+    font: 600 11px 'Open Sans', sans-serif;
+    padding-top: 15px;
+    letter-spacing: 3px;
+    line-height: 17.6px;
+    color: var(--classes-level-color);
+}
+
+.slider__btn-prev,
+.slider__btn-next {
+    position: absolute;
+    z-index: 1;
+    opacity: .8;
+    transition: opacity .2s ease-out;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    border: none;
+    top: 50%
+}
+
+.slider__btn-prev {
+    left: 0;
+}
+
+.slider__btn-next {
+    right: 0;
+}
+
+.slider__btn-prev::before {
+    content: "";
+    background-image: url("../img/classes-button-prev.svg");
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    width: 20px;
+    height: 20px;
+    opacity: .8;
+}
+
+.slider__btn-next::before {
+    content: "";
+    background-image: url("../img/classes-button-next.svg");
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    opacity: .8;
+}
+
+.classes__join-us {
+    padding: 43px;
+    background-color: var(--classes-background-color);
+}
+
+.classes__join-us-section {
+    padding: 30px 55px 125px 55px;
+}
+
+.classes__join-us img {
+    display: block;
+    height: 50px;
+}
+
+.classes__join-us-text {
+    line-height: 25.2px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 40px;
+    color: var(--dark-paragraph-color);
+}
+
+.classes__subtitle {
+    margin: 20px;
+}
+
+.classes__join-us-subtitle.subtitle {
+    margin: 20px 0px 20px 0px;
+    font-size: 1.75rem;
+}
+
+.parallax-benefits {
+    background-image: url(../img/classes-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax-benefits .container {
+    display: grid;
+    padding: 60px 25px 600px 25px;
+}
+
+.parallax-benefits__main-text {
+    border: 2px solid white;
+    padding: 40px 30px 40px 30px;
+    line-height: 24px;
+    color: var(--light-text-color);
+}
+
+.parallax-benefits__subtitle.subtitle {
+    color: var(--light-color);
+    font-size: 22px;
+}
+
+@media (min-width:992px) {
+    .classes__join-us {
+        padding: 80px;
+    }
+    .classes__join-us-subtitle.subtitle {
+        font-size: 2rem;
+    }
+}
+@media (min-width:768px) {
+    .parallax-benefits .container {
+        grid-template-columns: 7fr 5fr;
+    }
+
+    .parallax-benefits__main-text {
+        grid-column: 2;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .classes__join-us {
+        padding: 58px;
+    }
+    .classes__join-us-subtitle.subtitle {
+        font-size: 1.875rem;
+    }
+}
+@media (min-width:1199px) {
+
+    .slider__btn-prev,
+    .slider__btn-next {
+        transform: translateY(-50%);
+        top: 50%;
+        background: none;
+    }
+
+    .slider__btn-next::before,
+    .slider__btn-prev::before {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,130 @@
+.join {
+  background-color: var(--join-background-color);
+  display: flex;
+}
+.join__container{
+  /* display: flex;
+  justify-content: space-between; */
+}
+.join__grid-container{
+  display: grid;
+}
+@media (min-width: 992px){
+  .join__grid-container{
+    grid-template-columns: 30% 70%;
+  }
+  .join__first-column{
+    padding-left: 20px;
+  }
+}
+@media (max-width: 991px){
+  .join__carousel-container{
+    margin-top: 30px;
+  }
+  .join__grid-container{
+    grid-template-columns: 1fr;
+  }
+  .join__first-column{
+    padding-left: 20px;
+  }
+}
+.join__title {
+  text-transform: uppercase;
+  color: var(--join-title-color);
+}
+.join__subtitle {
+  font-size: 38px;
+  margin-top: 20px;
+}
+.join__paragraph-container {
+  margin-top: 25px;
+}
+.join__basic-things-container {
+  margin-top: 20px;
+}
+.join__basic-things-item {
+  display: flex;
+  align-items: center;
+}
+.join__basic-things-item::before {
+  content: url(../img/join-lotus-flower.svg);
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+.join__button-container {
+  display: flex;
+  margin-top: 30px;
+}
+.join__carousel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  /* max-width: 455px; */
+  /* margin-left: 20px; */
+}
+.join__slide-prev-btn {
+  border-style: none;
+  border-radius: 50%;
+  background-color: var( --footer-background-color);
+  width: 32px;
+  height: 32px;
+  opacity: 0.99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+}
+.join__slide-btn {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  width: 14px;
+  height: 14px;
+  border-radius: 20%;
+}
+.join__slides-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.join__slide-photo {
+  max-width: 615px;
+  height: 688px;
+}
+.join__slide-next-btn {
+  border-style: none;
+  border-radius: 50%;
+  background-color: var( --footer-background-color);
+  width: 32px;
+  height: 32px;
+  opacity: 0.99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(132deg);
+}
+@media (min-width: 768px){
+  .join__carousel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+  .join__slide-photo{
+    min-width: 326px;
+    max-width: 434px;
+  }
+}
+@media (max-width: 991px) {
+  .join__container {
+    margin: auto 40px;
+    padding: 125px 0;
+  }
+}
+@media (min-width: 992px) {
+  .join__container {
+    margin: auto 120px;
+    padding: 125px 0;
+  }
+
+}
